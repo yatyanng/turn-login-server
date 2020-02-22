@@ -107,7 +107,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>${spring.boot.version}</version>
 				<configuration>
-					<mainClass>com.example.turn_login.Boot</mainClass>
+					<mainClass>com.example.turn_rest.Boot</mainClass>
 				</configuration>
 				<executions>
 					<execution>
