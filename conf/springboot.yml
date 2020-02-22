@@ -1,0 +1,10 @@
+turn-api:
+  redis:
+    ip-address: "127.0.0.1"
+    port: 6379
+    password: "@dm1n"
+  server:
+    auth-secret: "20!9sip"
+    admin:
+      user: "admin"
+      password: "admin"
