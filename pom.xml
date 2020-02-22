@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.example</groupId>
 	<artifactId>turn-login-server</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>Turn Login Server</name>
 	<description>It provides credentials to TURN client.</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.boot.version>2.2.4.RELEASE</spring.boot.version>
-		<jackson.version>2.9.9</jackson.version>
+		<jackson.version>2.9.10</jackson.version>
 		<logback.version>1.2.3</logback.version>
 		<swagger.version>2.9.2</swagger.version>
 	</properties>
