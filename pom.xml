@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.example</groupId>
 	<artifactId>turn-login-server</artifactId>
-	<version>1.0.1</version>
+	<version>1.1.0</version>
 	<name>Turn Login Server</name>
 	<description>It provides credentials to TURN client.</description>
 	<properties>
@@ -13,6 +13,7 @@
 		<jackson.version>2.9.10</jackson.version>
 		<logback.version>1.2.3</logback.version>
 		<swagger.version>2.9.2</swagger.version>
+		<hazelcast-spring.version>3.11.7</hazelcast-spring.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -34,11 +35,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 			<version>${spring.boot.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-redis</artifactId>
-			<version>2.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -84,11 +80,6 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 			<version>${jackson.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>redis.clients</groupId>
-			<artifactId>jedis</artifactId>
-			<version>3.2.0</version>
 		</dependency>
 	</dependencies>
 	<build>
