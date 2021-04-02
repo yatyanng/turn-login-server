@@ -1,12 +1,21 @@
 turn-api:
   server:
-    auth-secret: "20!9sip"
-    uris: "turn:www.saleschat.tech:5349"
+    auth-secret: "Password"
+    uris: "turn:localhost:5349"
     ttl: 86400
     admin:
       username: "admin"
       password: "admin"
       
+management:
+  trace:
+    http:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
 server:
   http2:
     enabled: true

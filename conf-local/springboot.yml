@@ -1,10 +1,30 @@
 turn-api:
-  redis:
-    ip-address: "127.0.0.1"
-    port: 6379
-    password: "@dm1n"
   server:
-    auth-secret: "20!9sip"
+    auth-secret: "Password"
+    uris: "turn:localhost:5349"
+    ttl: 86400
     admin:
-      user: "admin"
+      username: "admin"
       password: "admin"
+      
+management:
+  trace:
+    http:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+server:
+  http2:
+    enabled: true
+  servlet:
+    session:
+      timeout: 86400s
+  port: 8443
+  ssl:
+    key-store: "conf-local/localhost.p12"
+    key-store-password: localhost
+    keyStoreType: PKCS12
+    keyAlias: localhost

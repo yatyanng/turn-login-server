@@ -9,7 +9,7 @@
 	<description>It provides credentials to TURN client.</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.boot.version>2.2.4.RELEASE</spring.boot.version>
+		<spring.boot.version>2.2.10.RELEASE</spring.boot.version>
 		<jackson.version>2.12.1</jackson.version>
 		<logback.version>1.2.3</logback.version>
 		<swagger.version>2.9.2</swagger.version>
