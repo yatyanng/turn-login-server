@@ -1,4 +1,4 @@
-package com.example.turn_rest.controller;
+package com.example.turnRest.controller;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.turn_rest.Constants;
-import com.example.turn_rest.service.CredentialEncoderUtil;
+import com.example.turnRest.Constants;
+import com.example.turnRest.util.CredentialEncoderUtil;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;

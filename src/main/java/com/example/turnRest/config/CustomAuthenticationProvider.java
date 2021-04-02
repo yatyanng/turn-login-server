@@ -1,4 +1,4 @@
-package com.example.turn_rest.config;
+package com.example.turnRest.config;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -13,7 +13,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Component;
-import com.example.turn_rest.Constants;
+import com.example.turnRest.Constants;
 
 @Component
 @SuppressWarnings("serial")

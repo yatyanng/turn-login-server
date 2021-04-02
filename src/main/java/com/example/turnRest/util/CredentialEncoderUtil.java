@@ -1,4 +1,4 @@
-package com.example.turn_rest.service;
+package com.example.turnRest.util;
 
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;

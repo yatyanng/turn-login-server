@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.example</groupId>
 	<artifactId>turn-login-server</artifactId>
-	<version>1.1.0</version>
+	<version>1.1.1</version>
 	<name>Turn Login Server</name>
 	<description>It provides credentials to TURN client.</description>
 	<properties>
@@ -34,6 +34,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
+			<version>${spring.boot.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 			<version>${spring.boot.version}</version>
 		</dependency>
 		<dependency>
@@ -98,7 +103,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>${spring.boot.version}</version>
 				<configuration>
-					<mainClass>com.example.turn_rest.Boot</mainClass>
+					<mainClass>com.example.turnRest.Boot</mainClass>
 				</configuration>
 				<executions>
 					<execution>

@@ -1,4 +1,4 @@
-package com.example.turn_rest;
+package com.example.turnRest;
 
 public class Constants {
 
@@ -9,7 +9,6 @@ public class Constants {
   public static final String PARAM_URIS = "uris";
   public static final String STR_COLON = ":";
   public static final String URL_TURN_LOGIN = "/turn-login";
-  public static final String SIP_SOFTSWITCH_REST_CLIENT = "sipSoftswitchRestClient";
   public static final String MESSAGE_DIGEST_MD5 = "MD5";
   public static final String STR_AT = "@";
   
