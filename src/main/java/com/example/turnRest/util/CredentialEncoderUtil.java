@@ -1,4 +1,4 @@
-package com.example.turn_rest.service;
+package com.example.turnRest.util;
 
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -12,8 +12,7 @@ public class CredentialEncoderUtil {
   private static final String HMAC_SHA1_ALGORITHM = "HmacSHA1";
 
   private static String toBase64String(byte[] bytes) {
-    Base64.Encoder encoder = Base64.getEncoder();
-    return encoder.encodeToString(bytes);
+    return Base64.getEncoder().encodeToString(bytes);
   }
 
   public static String encode(String data, String key)

@@ -4,15 +4,16 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.example</groupId>
 	<artifactId>turn-login-server</artifactId>
-	<version>1.0.1</version>
+	<version>1.1.2</version>
 	<name>Turn Login Server</name>
 	<description>It provides credentials to TURN client.</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.boot.version>2.2.4.RELEASE</spring.boot.version>
-		<jackson.version>2.9.10</jackson.version>
+		<spring.boot.version>2.2.10.RELEASE</spring.boot.version>
+		<jackson.version>2.12.1</jackson.version>
 		<logback.version>1.2.3</logback.version>
 		<swagger.version>2.9.2</swagger.version>
+		<hazelcast-spring.version>3.11.7</hazelcast-spring.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -36,9 +37,14 @@
 			<version>${spring.boot.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-redis</artifactId>
-			<version>2.2.4.RELEASE</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+			<version>${spring.boot.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ma.glasnost.orika</groupId>
+			<artifactId>orika-core</artifactId>
+			<version>1.5.4</version>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -49,6 +55,11 @@
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>${swagger.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>5.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -85,11 +96,6 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>${jackson.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>redis.clients</groupId>
-			<artifactId>jedis</artifactId>
-			<version>3.2.0</version>
-		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -107,7 +113,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>${spring.boot.version}</version>
 				<configuration>
-					<mainClass>com.example.turn_rest.Boot</mainClass>
+					<mainClass>com.example.turnRest.Boot</mainClass>
 				</configuration>
 				<executions>
 					<execution>
